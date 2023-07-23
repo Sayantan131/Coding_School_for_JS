@@ -11,7 +11,7 @@
  var a=12;
 
  //types in js
- 
+//  operator
 
 
 

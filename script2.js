@@ -17,11 +17,21 @@
 //reference = [] {} ()
 //aisi koi bhi value jisko copy karne par real copy nahi hota, balki us main value ka reference pass hojata hai, use hum reference value kahate
 //hai, aur jisko copy karne par real copy ho jaaye wo value primitive type value hai
-var a;
-a = [12,23];
-var b = a;
 
 
+// var a = [1,2,3,4];
+// var b = a;
+// b.pop();
 
+// conditionals - if else else-if
 
+// if(-1){
+
+// }
+
+// loops ka matlab repeat
+// for(Start;end;change);
+for(var i=0; i<11; i++){
+    console.log(i);
+}
 

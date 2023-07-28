@@ -35,3 +35,6 @@ for(var i=0; i<11; i++){
     console.log(i);
 }
 
+for(var i=1;i<=4;i++){
+   console.log(i);
+}

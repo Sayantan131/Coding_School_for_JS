@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h3>Accesing object in object</h3>
+    <p id="demo"></p>
+    <script>
+        const obj={
+            firstName: "Sayantan",
+            lastName: "Maity",
+            address:{
+                id: 234,
+                city:"kolkata",
+            },
+            inf:function(){
+                return "welcome";
+
+            }
+            
+        }
+        const user=JSON.parse(JSON.stringify(obj));
+        obj.address.city="hanuman";
+        console.log(obj);
+        console.log(user);
+    </script>
+</body>
+</html>

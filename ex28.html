@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events on javascript</title>
+</head>
+<body>
+    <h3>Events on javascript</h3>
+    <h2 id="demo" class="sayantan">Welcome to the github of sayantan</h2>
+    <script>
+        console.log("This is tutorial 17 on events");
+        document.getElementById("demo").addEventListener('click',function(e){
+            let variable;
+            console.log("You have clicked the h2 heading");
+            variable = e.target;
+            variable = e.target.id;
+            variable = e.target.className;
+
+            console.log(variable);
+            // location.href = '//youtube.com/';
+        });
+
+    </script>
+</body>
+</html>

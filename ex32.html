@@ -9,15 +9,26 @@
     <h3>Using event</h3>
     <form action="none.html" 
     method="post">
-    Search something here: <input type="text"> <input type="submit" id="btn" value="submit">
+    Search something here: <input type="text"> 
+    <button id="btn">submit</button>
+    <!-- <input type="submit" id="btn" value="submit"> -->
 </form>
     <script>
         console.log("It is a tutorial of event in javascript");
         let btn =  document.getElementById('btn');
         btn.addEventListener('click',func1);
+        btn.addEventListener('dblclick',func2);
         function func1(e){
             console.log("Thanks",e);
+             e.preventDefault();        
         }
+
+        function func2(e){
+            console.log("Thanks it's a double click", e);
+            e.preventDefault();
+        }
+        
+
     </script>
  </body>
  </html>

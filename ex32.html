@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h3::selection{
+            color: green;
+            background-color: pink;
+        }
+    </style>
  </head>
  <body>
     <h3>Using event</h3>
+    <div class="no">This a dummy div</div>
     <form action="none.html" 
     method="post">
     Search something here: <input type="text"> 
@@ -33,6 +40,22 @@
             console.log("Thanks it's a mousedown event ");
             e.preventDefault();
         }
+
+        document.querySelector('.no').addEventListener('mouseenter',function(){
+            console.log("You entered no");
+        })
+
+        
+        document.querySelector('.no').addEventListener('mouseleave',function(){
+            console.log("You Exit no");
+        })
+
+        document.querySelector('.no').addEventListener('mousemove',function(e){
+            console.log(e.offsetX,e.offsetY);
+            document.body.style.backgroundColor = 'rgb($(e.offsetX),$(e.offsetX),154)';
+            console.log("You triggered mousemove event");
+        })
+
 
 
     </script>

@@ -18,8 +18,9 @@
         let btn =  document.getElementById('btn');
         btn.addEventListener('click',func1);
         btn.addEventListener('dblclick',func2);
+        btn.addEventListener('mousedown',func3);
         function func1(e){
-            console.log("Thanks",e);
+            // console.log("Thanks",e);
              e.preventDefault();        
         }
 
@@ -27,7 +28,12 @@
             console.log("Thanks it's a double click", e);
             e.preventDefault();
         }
-        
+
+        function func3(e){
+            console.log("Thanks it's a mousedown event ");
+            e.preventDefault();
+        }
+
 
     </script>
  </body>

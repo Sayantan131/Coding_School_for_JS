@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-tick``</title>
+</head>
+<body>
+    <h3>Javascript template literals</h3>
+    <p>
+        Template literal allow variable in string
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let price = 10;
+        let VAT = 0.25;
+        let tl = `tl: ${(price * (1+VAT)).toFixed(2)}`;
+        let totals = `Totals: ${(price * (1+VAT)).toFixed(2)}`;
+        let total =  `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+        document.getElementById('demo').innerHTML = totals;
+        document.getElementById('demo1').innerHTML = total;
+        document.getElementById('demo2').innerHTML = tl;
+    </script>
+</body>
+</html>

@@ -8,10 +8,16 @@
 <body>
     <h3>match All() property in string search in javaScript</h3>
     <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         let text = "I love cats. Cats are very easy to love. Cats are very popular.";
         const iterator = text.matchAll("Cats");
+        let a = text.matchAll(/Cats/g);
+        let b = text.matchAll(/Cats/gi);
         document.getElementById('demo').innerHTML = Array.from(iterator);
+        document.getElementById('demo1').innerHTML = Array.from(a);
+        document.getElementById('demo2').innerHTML = Array.from(b);
     </script>
 </body>
 </html>

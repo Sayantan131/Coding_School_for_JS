@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loop in array</h1>
+    <p id="demo"></p>
+    <script>
+        const fruits=["banana", "apple", "mango", "lemon"];
+        let flen = fruits.length;
+        let text = "<ul>";
+            for(let i=0;i<flen;i++){
+                text +="<li>"+fruits[i]+"</li>";
+            }
+
+            document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

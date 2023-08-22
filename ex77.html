@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeric sorting</title>
+</head>
+<body>
+    <h1>sorting in JavaScript</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const points = [1,8,4,5,71,56,42,61,89,56,32];
+        document.getElementById("demo").innerHTML= points;
+        points.sort(function(a,b){return a-b});
+        document.getElementById("demo1").innerHTML = points;
+    </script>
+</body>
+</html>

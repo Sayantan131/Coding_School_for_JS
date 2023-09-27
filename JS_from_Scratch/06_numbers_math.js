@@ -20,6 +20,7 @@ console.log(hundreds.toLocaleString('en-IN'));
 //*******************   Math  *****************************/
 
 
+ console.log(Math);
  
 
 

@@ -2,7 +2,7 @@
 
 //object literals
 
-const mySym = Symbol("key1");
+const mySym = Symbol("key1");  ///********************important*****************
 
 // Object.create
 const JsUser = {
@@ -28,7 +28,7 @@ const JsUser = {
 
  JsUser.email = "maitysayntan67@gmail.com";
 //  console.log(JsUser.email);
-//  Object.freeze(JsUser);
+//  Object.freeze(JsUser); /////*****************88important */
  JsUser.email = "maitysayantan@google.com";
 //  console.log(JsUser);
 
@@ -38,7 +38,7 @@ const JsUser = {
   }
   
   JsUser.greetingTwo = function(){
-    console.log(`Hello JS user,${this.name}`);
+    console.log(`Hello JS user,${this.name}`); ////***********important***** */
   }
 
   console.log(JsUser.greeting());

@@ -39,4 +39,17 @@ const chai = ()=> {
 
 // chai();
 
+//  const addTwo = (num1,num2)=>{
+//     return num1+num2;
+//  }
+
+
+//implisit return
+
+//  const addTwo = (num1,num2)=> num1+num2;
+
+
+//  const addTwo = (num1,num2)=> (num1+num2)
+ const addTwo = (num1,num2)=>({username:"Sayantan"})
  
+ console.log(addTwo(5,5));

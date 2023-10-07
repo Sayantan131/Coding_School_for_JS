@@ -33,3 +33,7 @@ console.log(newDate);
 
 console.log(newDate.getMonth());
 
+`${newDate.getDate()} and time is ${newDate.getHours()}`;
+
+
+

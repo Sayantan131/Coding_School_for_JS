@@ -56,6 +56,20 @@ const balance = 4000;
 //     console.log("balance less than 5000")
 // }
 
+//Real life example: 
+
+const userloggedIn = true
+const debitCard = true
+const loggedInfromGoogle = false
+const loggedInfromEmail = true
+
+if(userloggedIn && debitCard && loggedInfromEmail && loggedInfromGoogle ){
+    console.log("Allow to buy a course");
+}
+if(userloggedIn || debitCard || loggedInfromEmail || loggedInfromGoogle ){
+    console.log("Allow to buy a course");
+}
+
 
 
 

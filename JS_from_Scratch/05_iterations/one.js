@@ -46,3 +46,5 @@
    console.log(`value of i is ${index}`);
     
  }
+
+ 

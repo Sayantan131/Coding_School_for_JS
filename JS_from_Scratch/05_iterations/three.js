@@ -37,7 +37,7 @@ const myObject = {
     'Game2':'spy'
 }
 
-// for (const [key,value] of myObject) {  //using for off loop we can not print object 
+// for (const [key,value] of myObject) {  //using for off loop we can not print object
 //     console.log(key, ':-', value)
 // }
 

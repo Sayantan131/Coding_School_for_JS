@@ -25,6 +25,8 @@ map.set('IN',"India")
 map.set('Fr',"France")
 map.set('USA',"United State of America")
 
-// for (const key in map) {  //using forin lopp map is not itratable // intaration is a process of repeatedly executing a process of operation 
+// for (const key in map) {  //using forin lopp map is not itratable // intaration is a process of repeatedly executing a process of operation
+ 
 //    console.log(key)
+// console.log(key)
 // }

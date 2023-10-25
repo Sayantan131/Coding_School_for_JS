@@ -13,7 +13,7 @@ for (const key in myObject) {
 
 //array in forin
 
-const programming = ['js','cpp','py','java']
+const programming = ['js','cpp','py','java','ruby','java']
 
 for (const key in programming) {
 //    console.log(programming[key])

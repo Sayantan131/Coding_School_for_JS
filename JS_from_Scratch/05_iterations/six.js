@@ -2,7 +2,7 @@
 
 // const coding = ["js","ruby","C++","python","cpp"]
 
-// const values = coding.forEach( (item)=>{     //foreach loop return nothing
+// const values = coding.forEach( (item)=>{     //foreach loop return undefined
 //     console.log(item)
 //     return item
 // } )

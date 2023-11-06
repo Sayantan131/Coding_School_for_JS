@@ -1,9 +1,9 @@
 const clock = document.getElementById('clock')
 // console.log(clock);
 
-// let date = new Date();
+let date = new Date();
 
-// console.log(date.toLocaleTimeString());
+console.log(date.toLocaleTimeString());
 
 
 setInterval(function(){

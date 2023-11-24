@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+
+let interValid;
+
+
+function startInterval(){
+    intervalid = setInterval(function(){
+    console.log("Sayantan", Date.now());
+},1000)
+}
+
+function stopInterVal(){
+    clearInterval(interValid);
+    console.log("stopped");
+}
+
+
+// clearInterval(abc);
+
+document.querySelector('#stop').addEventListener('click',stopInterVal);
+    
+
+// document.querySelector('#start').addEventListener('click',startInterval)
+
+
+
+</script>
+</html>

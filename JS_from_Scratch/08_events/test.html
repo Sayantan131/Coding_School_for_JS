@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interval Example</title>
+</head>
+<body>
+
+<button id="startButton">Start</button>
+<button id="stopButton">Stop</button>
+
+<script>
+let intervalId;
+
+document.getElementById('startButton').addEventListener('click', startInterval);
+document.getElementById('stopButton').addEventListener('click', stopInterval);
+
+function startInterval() {
+  // Set interval to log a message every 1 second (1000 milliseconds)
+  intervalId = setInterval(function() {
+    console.log('Interval message');
+  }, 1000);
+}
+
+function stopInterval() {
+  // Clear the interval when the stop button is clicked
+  clearInterval(intervalId);
+  console.log('Interval stopped');
+}
+</script>
+
+</body>
+</html>

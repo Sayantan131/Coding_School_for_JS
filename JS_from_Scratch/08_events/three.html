@@ -7,32 +7,35 @@
 </head>
 <body>
     <h1>Chai aur JavaScript</h1>
-    <button id="stop">Stop</button>
-    <button id="start">Start</button>
+    <button id="stop" onclick="stopInterVal()">Stop</button>
+    <button id="start" onclick="startInterval()">Start</button>
 </body>
 <script>
 
-let interValid;
+let intervalid;
 
 
 function startInterval(){
-    intervalid = setInterval(function(){
+    intervalid = setInterval(()=>{
     console.log("Sayantan", Date.now());
 },1000)
 }
 
+// clearInterval(interValid);
+
 function stopInterVal(){
-    clearInterval(interValid);
+    clearInterval(intervalid);
+    
     console.log("stopped");
 }
 
 
 // clearInterval(abc);
 
-document.querySelector('#stop').addEventListener('click',stopInterVal);
+// document.querySelector('#stop').addEventListener('click',stopInterVal());
     
 
-// document.querySelector('#start').addEventListener('click',startInterval)
+// document.querySelector('#start').addEventListener('click',startInterval())
 
 
 

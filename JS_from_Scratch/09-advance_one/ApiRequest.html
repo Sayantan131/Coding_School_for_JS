@@ -15,7 +15,7 @@
     .practice{
         height: 400px;
         width: 400px;
-        background-color: yellow;
+        /* background-color: yellow; */
         margin-top: 200px;
         /* display: none; */
     }
@@ -52,9 +52,29 @@
     console.log(xhr.readyState);
     if(xhr.readyState === 4){
         const data = JSON.parse(this.responseText);
+       const image = data.avatar_url;
+       const followers = data.followers;
+       const imgtag = document.createElement("img");
+       const ptag = document.createElement('p');
+       imgtag.src = image;
+       ptag.innerHTML = "Followers: "+followers;
+       const div =  document.querySelector('.practice')
+       const show = function(){
+        div.appendChild(imgtag);
+       div.appendChild(ptag);
+       }
 
-        console.log(data.avatar_url)
-        console.log(data.followers)
+       document.querySelector("#btn").addEventListener('click',show)
+
+
+
+      
+      
+
+
+      console.log(image);
+        console.log()
+        console.log(div);
     }
   }
    

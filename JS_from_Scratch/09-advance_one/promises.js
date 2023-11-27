@@ -12,3 +12,12 @@ const promiseOne = new Promise(function(resove, reject){
 promiseOne.then(function(){
     console.log("promise consumed");
 })
+
+new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("Async task 2 complete");
+        resolve();
+    },1000)
+}).then(function(){
+    console.log("Async 2 consumed");
+})

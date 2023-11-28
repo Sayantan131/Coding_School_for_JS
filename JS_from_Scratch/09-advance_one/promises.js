@@ -39,7 +39,7 @@ new Promise(function(resolve,reject){
 
  const promiseFour = new Promise(function(resolve,reject){
     setTimeout(function(){
-        let error = false;
+        let error = true;
         if(!error){
             resolve({userName:"Sayantan",password:"1234"})
         }else{
@@ -55,4 +55,9 @@ new Promise(function(resolve,reject){
     console.log(username);
  }).catch((error)=>{
     console.log(error);
- })
+ }).finally(()=>{
+    console.log("The promise is either resolve or reject");
+ })  
+
+
+ 

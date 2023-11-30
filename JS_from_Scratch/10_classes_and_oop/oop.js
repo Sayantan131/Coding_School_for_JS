@@ -1,8 +1,13 @@
 const user = {
 
-    username:"hitesh",
+    username:"Sayantan",
     loginCount:8,
-    signedIn:true
+    signedIn:true,
+
+    getUserDetails: function(){
+        console.log("Got user details from database");
+    }
 }
 
 console.log(user.username);
+console.log(user.getUserDetails())

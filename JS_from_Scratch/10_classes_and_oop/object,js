@@ -1,0 +1,11 @@
+//prototype---- inheritance  
+
+function multyplyBy5(num){
+    return num*5;
+}
+
+multyplyBy5.power = 2;
+
+console.log(multyplyBy5(5))
+console.log(multyplyBy5.power)
+console.log(multyplyBy5.prototype)

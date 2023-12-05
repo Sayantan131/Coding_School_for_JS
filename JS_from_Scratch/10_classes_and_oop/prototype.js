@@ -5,6 +5,8 @@
 // console.log(myName.trueLength());
 
 
+
+
 let myHeros = ["thor","spiderman"]
 
 
@@ -33,4 +35,45 @@ Array.prototype.heySayantan = function(){
 myHeros.sayantan();
 myHeros.heySayantan();
 // heroPower.heySayantan();
+
+
+//inheritance
+
+const user = {
+    name:"Chai",
+    gmail:"chai@gmail.com"
+}
+
+const Teacher = {
+    makeVideo : true
+}
+
+const TeachingSupport={
+    isAvailable:false
+}
+
+const TASupport = {
+    makeAssignment :'JS assignment',
+    fullTime:true,
+    __proto__:TeachingSupport
+}
+
+Teacher.__proto__ = user;
+
+//modern syntax
+
+Object.setPrototypeOf(TeachingSupport,Teacher);
+
+
+let anotherUsername = "Chaiaurcode     "
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength()
+"Sayantan".trueLength()
+"Adrija".trueLength()
+"icecream".trueLength()
 

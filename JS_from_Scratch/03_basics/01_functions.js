@@ -37,7 +37,7 @@ const result = addTwoNumbers(2,5);
 
 function loginUserMessage(username="sam"){
     if(!username){
-        console.log("Please enter  a username");
+        console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
